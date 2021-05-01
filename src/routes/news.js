@@ -5,7 +5,7 @@ const axios = require('axios');
 newsRouter.get('', async(req, res) => {
 
     try {
-        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=b3f58ddd344b4af29a7d321821468099`)
+        const newsAPI = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&apiKey=APIKEY`)
         //console.log(newsAPI.data)
         res.render('news', { articles: newsAPI.data.articles })
     } catch (error) {
