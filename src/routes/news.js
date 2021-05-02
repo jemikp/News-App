@@ -1,7 +1,7 @@
 const express = require('express');
 const newsRouter = express.Router();
 const axios = require('axios');
-const API_KEY = require('./api-key');
+const API_KEY = require('../../api-key');
 
 newsRouter.get('', async(req, res) => {
 
