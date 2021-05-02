@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 const newsRouter = require('./src/routes/news');
 
 app.use('/', newsRouter);
-app.use('/article', newsRouter);
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);

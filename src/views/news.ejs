@@ -20,7 +20,7 @@
         <div class="news">
             <% if(articles != null) { %>
         <% articles.forEach(function(article) { %>
-            <a href="#" class="news__card">
+            <a href="<%- article.url %>" class="news__card">
                 <img src="<%- article.urlToImage  %>" alt="<%- article.title %>">
                 <h2><%- article.title %></h2>
                 <p><%- article.description %></p>
